@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Read More with JS</title>
+		<link rel="stylesheet" href="readMore.css" />
+	</head>
+	<body>
+		<h1 class="centered">Read More with JS</h1>
+		<br />
+		<div class="centered read-more">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sit amet lectus id purus pharetra vestibulum. Morbi faucibus massa ac metus efficitur, in pulvinar nunc facilisis. Cras fringilla blandit nibh, eget blandit nisi porta quis. Curabitur sit amet ligula lacus. Nullam imperdiet, est sed tempus blandit, metus metus lobortis eros, nec tempus diam ipsum id lectus. Aliquam imperdiet diam ac pellentesque sollicitudin. Quisque congue vitae augue imperdiet pharetra. Ut ac leo sed ex tristique pellentesque ut eget nulla. Praesent feugiat, eros sed interdum ultricies, lorem nisi luctus augue, vel congue diam sapien aliquam leo. Duis efficitur mattis urna, at hendrerit est hendrerit a. Donec bibendum ullamcorper metus sit amet volutpat. Aenean in nisl luctus, hendrerit lectus fringilla, finibus orci.</div>
+		<div class="centered read-more">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sit amet lectus id purus pharetra vestibulum. Morbi faucibus massa ac metus efficitur, in pulvinar nunc facilisis. Cras fringilla blandit nibh, eget blandit nisi porta quis. Curabitur sit amet ligula lacus. Nullam imperdiet, est sed tempus blandit, metus metus lobortis eros, nec tempus diam ipsum id lectus. Aliquam imperdiet diam ac pellentesque sollicitudin. Quisque congue vitae augue imperdiet pharetra. Ut ac leo sed ex tristique pellentesque ut eget nulla. Praesent feugiat, eros sed interdum ultricies, lorem nisi luctus augue, vel congue diam sapien aliquam leo. Duis efficitur mattis urna, at hendrerit est hendrerit a. Donec bibendum ullamcorper metus sit amet volutpat. Aenean in nisl luctus, hendrerit lectus fringilla, finibus orci.</div>
+		<div class="centered read-more">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sit amet lectus id purus pharetra vestibulum.</div>
+		<br />
+		<div class="centered">Get it on <a href=""><img src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Logo.png" height="20px;" /><img src="https://assets-cdn.github.com/images/modules/logos_page/Octocat.png" height="20px;" /></a> now.</div>
+		
+		<script src="jquery.min.js"></script>
+		<script src="readMore.js"></script>
+		<script>
+			$(function() {
+				$('.read-more')
+					.each(function(idx, el) {
+						$(el).readMore({
+							lines: 2,
+						});
+					});
+			});
+		</script>
+		<style>
+			body {
+				padding: 2%;
+				color: #4c4c4c;
+			}
+			h1 {
+				border-bottom: 5px solid #4c4c4c;
+				margin-bottom: 20px;
+			}
+			.centered {
+				width: 60%;
+				margin:auto;
+				font-family: Arial;
+			}
+			.read-more {
+				text-align: justify;
+				padding-left: 3%;
+				padding-right: 3%;
+			}
+		</style>
+	</body>
+</html>

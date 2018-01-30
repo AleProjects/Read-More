@@ -1,0 +1,6 @@
+/**
+ * CSS library: Read More
+ * Free to use and edit with this doc
+ * Contact me for help: progettialessandro@gmail.com
+ */
+.read-more{padding:5px 10px}.read-more span{overflow:hidden}.read-more .expander{display:block;text-align:right;letter-spacing:1px;color:#006EB2}.line-clamp{display:-webkit-box!important;-webkit-line-clamp:3;-webkit-box-orient:vertical}.fade{position:relative;height:3.6em}.fade:after{content:"";text-align:right;position:absolute;bottom:0;right:0;width:20%;height:1.2em;background:linear-gradient(to right,rgba(255,255,255,0),rgba(255,255,255,1) 50%)}
